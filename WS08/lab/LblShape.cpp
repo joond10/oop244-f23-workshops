@@ -11,6 +11,7 @@ namespace sdds {
         delete[] m_label;
     }
 
+    //Has it's own implementation based on its class
     void LblShape::getSpecs(std::istream& istr) {
         char label[1000];
         istr.getline(label, 1000, ',');

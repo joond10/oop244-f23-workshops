@@ -19,7 +19,7 @@ namespace sdds {
 
 		}
 	}
-
+	//Overrides the pure virtual version of the interface (Upgrades from abstract class by building off it)
 	void Rectangle::getSpecs(std::istream& istr){
 		LblShape::getSpecs(istr);
 		istr >> m_width;
@@ -27,7 +27,7 @@ namespace sdds {
 		istr >> m_height;
 		istr.ignore(1000, '\n');
 	}
-
+	//Overrides the pure virtual version of the interface
 	void Rectangle::draw(std::ostream& ostr) const{
 		if (m_width != 0) {
 			int i{}, j{};

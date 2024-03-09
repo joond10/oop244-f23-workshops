@@ -10,15 +10,13 @@ namespace sdds {
 	}
 
 	Graduate::Graduate(const char* name = nullptr, size_t age = 0, const char* thesis = nullptr, const char* supervisor = nullptr)
-		: m_thesis(nullptr), m_supervisor(nullptr), Student(name, age) {
+		: m_thesis(nullptr), m_supervisor(nullptr), Student(name, age) { // Pass the name and age passed into initalize the base class Student
 
 		if (supervisor != nullptr) {
-			delete[] m_supervisor;
 			m_supervisor = new char[strlen(supervisor) + 1];
 			strcpy(m_supervisor, supervisor);
 		}
 		if (thesis != nullptr) {
-			delete[] m_thesis;
 			m_thesis = new char[strlen(thesis) + 1];
 			strcpy(m_thesis, thesis);
 		}

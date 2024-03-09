@@ -2,6 +2,8 @@
 #define SDDS_RECTANGLE_H
 #include "LblShape.h"
 namespace sdds {
+	//Another concrete class derived of LblShape
+	//It fully implements the interface meaning it can be instatiated
 	class Rectangle : public LblShape {
 		size_t m_width;
 		size_t m_height;
