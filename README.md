@@ -1,2 +1,2 @@
 # OOP-Workshops
-The workshops will be posted in this repository. Make sure to click on "Watch" so you are notified by GitHub if any new workshop is posted or any changes are made to the workshops. 
+ I completed these during the break in between my first and second semester. They now serve as study notes!
